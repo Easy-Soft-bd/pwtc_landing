@@ -2,6 +2,7 @@
 
 import { useMobileMenu } from "./MobileMenuProvider";
 import { useEffect } from "react";
+import Link from "next/link";
 import Logo from "../assets/logo/Logo";
 
 const MobileMenuContent = () => {
@@ -20,8 +21,8 @@ const MobileMenuContent = () => {
   }, [isOpen]);
 
   const menuItems = [
-    { href: "#home", label: "Home" },
-    { href: "#visa", label: "Visa" },
+    { href: "/", label: "Home" },
+    { href: "/visa", label: "Visa" },
     { href: "#about-us", label: "About Us" },
   ];
 
@@ -60,7 +61,7 @@ const MobileMenuContent = () => {
 
         <nav className="px-6 py-8 space-y-2 flex-1 overflow-y-auto">
           {menuItems.map((item, index) => (
-            <a
+            <Link
               key={item.href}
               href={item.href}
               className={`block text-foreground hover:text-primary transition-all duration-500 font-semibold text-[18px] tracking-wide py-5 px-5 rounded-xl hover:bg-light/10 hover:translate-x-3 hover:shadow-md border-l-4 border-transparent hover:border-primary ${
@@ -76,7 +77,7 @@ const MobileMenuContent = () => {
               onClick={close}
             >
               <span className="relative z-10">{item.label}</span>
-            </a>
+            </Link>
           ))}
         </nav>
 
