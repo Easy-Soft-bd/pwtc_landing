@@ -1,7 +1,9 @@
-export default function Home() {
+import Home from "@/views/home";
+
+export default function index() {
   return (
     <>
-      <h1>Hello World</h1>
+      <Home />
     </>
   );
 }

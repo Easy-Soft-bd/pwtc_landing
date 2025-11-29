@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${montserrat.variable} antialiased`}>
         <Header />
-        <div className="container mx-auto">{children}</div>
+        <>{children}</>
       </body>
     </html>
   );
