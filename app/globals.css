@@ -35,8 +35,7 @@
   --color-warning: var(--warning);
   --color-success: var(--success);
   
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-montserrat);
 }
 
 /* Force light theme - override dark mode preference */
@@ -51,5 +50,90 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+/* Mesh Gradient for Header */
+.header-mesh-gradient {
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-mesh-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 0% 0%, rgba(44, 49, 119, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 100% 0%, rgba(168, 160, 244, 0.18) 0%, transparent 50%),
+    radial-gradient(circle at 100% 100%, rgba(85, 84, 159, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 0% 100%, rgba(126, 121, 201, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(211, 202, 255, 0.1) 0%, transparent 60%);
+  background-size: 200% 200%;
+  animation: colorBlend1 10s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 1;
+}
+
+.header-mesh-gradient::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(44, 49, 119, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 80% 30%, rgba(168, 160, 244, 0.15) 0%, transparent 45%),
+    radial-gradient(circle at 70% 80%, rgba(85, 84, 159, 0.1) 0%, transparent 45%),
+    radial-gradient(circle at 30% 70%, rgba(126, 121, 201, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 60% 40%, rgba(211, 202, 255, 0.08) 0%, transparent 55%);
+  background-size: 200% 200%;
+  animation: colorBlend2 12s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+@keyframes colorBlend1 {
+  0%, 100% {
+    background-position: 0% 0%;
+    opacity: 1;
+  }
+  25% {
+    background-position: 100% 0%;
+    opacity: 0.9;
+  }
+  50% {
+    background-position: 100% 100%;
+    opacity: 0.85;
+  }
+  75% {
+    background-position: 0% 100%;
+    opacity: 0.95;
+  }
+}
+
+@keyframes colorBlend2 {
+  0%, 100% {
+    background-position: 100% 100%;
+    opacity: 0.8;
+  }
+  25% {
+    background-position: 0% 100%;
+    opacity: 0.7;
+  }
+  50% {
+    background-position: 0% 0%;
+    opacity: 0.75;
+  }
+  75% {
+    background-position: 100% 0%;
+    opacity: 0.85;
+  }
 }

@@ -7,8 +7,8 @@ import { MobileMenuProvider } from "./MobileMenuProvider";
 const Header = () => {
   return (
     <MobileMenuProvider>
-      <header className="relative w-full bg-surface border-b border-light/20 h-[60px] px-4">
-        <nav className="relative flex items-center justify-between max-w-7xl mx-auto h-full">
+      <header className="header-mesh-gradient relative w-full border-b border-light/20 h-[80px] md:h-[60px] px-4 z-50">
+        <nav className="relative flex items-center justify-between max-w-7xl mx-auto h-full z-10">
           {/* Logo */}
           <div className="flex items-center">
             {/* Logo with text - visible on tablet and desktop */}
@@ -16,7 +16,7 @@ const Header = () => {
               <Logo withText={true} />
             </div>
             {/* Logo only - visible on mobile */}
-            <div className="md:hidden relative w-auto max-w-[120px] h-full">
+            <div className="md:hidden relative w-auto max-w-[110px] h-full">
               <Logo withText={false} />
             </div>
           </div>
@@ -28,7 +28,7 @@ const Header = () => {
           <div className="flex items-center gap-4 md:gap-6">
             <a
               href="#sign-in"
-              className="hidden sm:block text-foreground hover:text-secondary transition-colors font-medium"
+              className="hidden sm:block text-foreground hover:text-primary transition-all duration-300 font-semibold text-[15px] tracking-wide"
             >
               Sign In
             </a>
