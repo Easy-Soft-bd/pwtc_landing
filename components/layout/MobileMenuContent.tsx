@@ -4,6 +4,7 @@ import { useMobileMenu } from "./MobileMenuProvider";
 import { useEffect } from "react";
 import Link from "next/link";
 import Logo from "../assets/logo/Logo";
+import { navigation } from "@/lib/config";
 
 const MobileMenuContent = () => {
   const { isOpen, close } = useMobileMenu();
@@ -20,11 +21,7 @@ const MobileMenuContent = () => {
     };
   }, [isOpen]);
 
-  const menuItems = [
-    { href: "/", label: "Home" },
-    { href: "/visa", label: "Visa" },
-    { href: "#about-us", label: "About Us" },
-  ];
+  const menuItems = navigation.main;
 
   return (
     <>

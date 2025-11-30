@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { HelpCircle, ChevronDown, ExternalLink, Phone, Mail, MapPin } from "lucide-react";
+import { contact, company } from "@/lib/config";
+import { faqs as faqsConfig } from "@/lib/config/visa/singapore";
 
 interface FAQItem {
   question: string;
@@ -17,44 +19,8 @@ interface FAQItem {
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const faqs: FAQItem[] = [
-    {
-      question: "What are the requirements for Bangladeshi to apply for Singapore Visa?",
-      answer: "Documents required to apply for Singapore Visa can be found on the ICA official website. Bangladesh holding diplomatic, official and service passports do not require a visa for entry.",
-      links: [
-        {
-          text: "ICA Visa Requirements - Bangladesh",
-          url: "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements/visa-detail-page/bangladesh",
-        },
-      ],
-    },
-    {
-      question: "How can I apply for Singapore Visa in Bangladesh?",
-      answer: "Applicants may submit the applications through Singapore Authorised Visa Agents located in Dhaka. The contacts can be found on the High Commission website.",
-      links: [
-        {
-          text: "Authorised Visa Agents",
-          url: "https://www.mfa.gov.sg/Overseas-Mission/Dhaka/Consular-Services/Overview-visa-information/visa-information",
-        },
-      ],
-    },
-    {
-      question: "What can I do if my visa application is still pending after 5 working days?",
-      answer: "Applicant may approach the AVA (Authorised Visa Agent) for assistance. Singapore High Commission will consider the application on case-by-case basis.",
-    },
-    {
-      question: "Why was my visa application been rejected?",
-      answer: "Singapore High Commission will not reveal the reason for rejection. Applicant may submit the appeal for reassessment through the AVA. Singapore High Commission will consider the application on case-by-case basis.",
-    },
-    {
-      question: "Why am I issued with Double or Single Journey Visa (DJV/SJV) when I applied for Multiple Journey Visa (MJV)?",
-      answer: "Singapore High Commission follows the set of requirements matrix and applications are assessed on case-by-case basis. Applicant will not be guaranteed with the MJV applied for.",
-    },
-    {
-      question: "Can I apply for medical visa or business visa with tourism agency letter of invitation (LOI)?",
-      answer: "No. Medical visa will require LOI from the medical industry and business visa will require LOI from Singapore business company.",
-    },
-  ];
+  // Use FAQs from config
+  const faqs: FAQItem[] = faqsConfig;
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -148,7 +114,7 @@ const FAQSection = () => {
                         {faq.contactInfo && (
                           <div className="mt-6 p-4 sm:p-5 bg-primary/5 rounded-xl border border-primary/10">
                             <h4 className="text-sm sm:text-base font-bold text-foreground mb-4">
-                              Contact Privileged World Travel Club:
+                              Contact {company.name}:
                             </h4>
                             <div className="space-y-3">
                               <div className="flex items-start gap-3">
@@ -156,10 +122,10 @@ const FAQSection = () => {
                                 <div>
                                   <p className="text-xs sm:text-sm text-secondary/70 mb-1">Phone</p>
                                   <a
-                                    href={`tel:${faq.contactInfo.phone.replace(/\s/g, '')}`}
+                                    href={`tel:${contact.phone.raw}`}
                                     className="text-sm sm:text-base text-primary hover:text-secondary transition-colors font-semibold"
                                   >
-                                    {faq.contactInfo.phone}
+                                    {contact.phone.display}
                                   </a>
                                 </div>
                               </div>
@@ -168,10 +134,10 @@ const FAQSection = () => {
                                 <div>
                                   <p className="text-xs sm:text-sm text-secondary/70 mb-1">Email</p>
                                   <a
-                                    href={`mailto:${faq.contactInfo.email}`}
+                                    href={`mailto:${contact.email.raw}`}
                                     className="text-sm sm:text-base text-primary hover:text-secondary transition-colors font-semibold break-all"
                                   >
-                                    {faq.contactInfo.email}
+                                    {contact.email.display}
                                   </a>
                                 </div>
                               </div>
@@ -180,7 +146,7 @@ const FAQSection = () => {
                                 <div>
                                   <p className="text-xs sm:text-sm text-secondary/70 mb-1">Address</p>
                                   <p className="text-sm sm:text-base text-secondary/80 leading-relaxed">
-                                    {faq.contactInfo.address}
+                                    {contact.address.full}
                                   </p>
                                 </div>
                               </div>

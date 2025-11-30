@@ -10,58 +10,53 @@ import {
   Twitter,
   ArrowRight,
 } from "lucide-react";
+import {
+  navigation,
+  contact,
+  socialMedia,
+  company,
+} from "@/lib/config";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  const quickLinks = [
-    { href: "/", label: "Home" },
-    { href: "/visa", label: "Visa" },
-    { href: "#about-us", label: "About Us" },
-    { href: "#services", label: "Services" },
-  ];
-
-  const services = [
-    { href: "#air-tickets", label: "Air Tickets" },
-    { href: "#hotel-reservation", label: "Hotel Reservation" },
-    { href: "#tour-packages", label: "Tour Packages" },
-    { href: "#visa-processing", label: "Visa Processing" },
-  ];
+  const quickLinks = navigation.footer.quickLinks;
+  const services = navigation.footer.services;
 
   const contactInfo = [
     {
       icon: MapPin,
-      text: "Room 33-34, (5th floor), Mukto Bangla Shopping Complex, Mirpur-1, Dhaka 1216",
+      text: contact.address.full,
     },
     {
       icon: Phone,
-      text: "+880 1819 591 111",
+      text: contact.phone.display,
     },
     {
       icon: Mail,
-      text: "privilegedworldbd@gmail.com",
+      text: contact.email.display,
     },
   ];
 
   const socialLinks = [
     {
-      name: "Facebook",
-      href: "#",
+      name: socialMedia.facebook.name,
+      href: socialMedia.facebook.href,
       icon: Facebook,
     },
     {
-      name: "Instagram",
-      href: "#",
+      name: socialMedia.instagram.name,
+      href: socialMedia.instagram.href,
       icon: Instagram,
     },
     {
-      name: "LinkedIn",
-      href: "#",
+      name: socialMedia.linkedin.name,
+      href: socialMedia.linkedin.href,
       icon: Linkedin,
     },
     {
-      name: "Twitter",
-      href: "#",
+      name: socialMedia.twitter.name,
+      href: socialMedia.twitter.href,
       icon: Twitter,
     },
   ];
@@ -80,9 +75,7 @@ const Footer = () => {
               <Logo withText={true} />
             </div>
             <p className="text-sm text-secondary/70 leading-relaxed mb-6">
-              Your trusted partner for premium travel experiences. We make your
-              travel dreams come true with expert visa processing, luxury
-              accommodations, and seamless travel arrangements.
+              {company.tagline}
             </p>
             {/* Social Links */}
             <div className="flex items-center gap-3">
@@ -176,7 +169,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             {/* Copyright */}
             <div className="text-sm text-secondary/60">
-              © {currentYear} Privileged World Travel Club. All rights reserved.
+              © {currentYear} {company.name}. All rights reserved.
             </div>
 
             {/* Legal Links */}
