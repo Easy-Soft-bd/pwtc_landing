@@ -12,18 +12,12 @@ import {
 import Link from "next/link";
 import { routes, company } from "@/lib/config";
 
-// Import team photos
-import teamPhoto1 from "@/components/assets/Teams/photo.jpg";
-import teamPhoto2 from "@/components/assets/Teams/photo (1).jpg";
-import teamPhoto3 from "@/components/assets/Teams/photo (2).jpg";
-import teamPhoto4 from "@/components/assets/Teams/photo (3).jpg";
-import teamPhoto5 from "@/components/assets/Teams/photo (4).jpg";
-import teamPhoto6 from "@/components/assets/Teams/photo (5).jpg";
-import teamPhoto7 from "@/components/assets/Teams/photo (6).jpg";
-import teamPhoto8 from "@/components/assets/Teams/photo (7).jpg";
+// Import team photos from Teams folder (PNG)
+import teamPhoto1 from "@/components/assets/Teams/photo (1).png";
+import teamPhoto2 from "@/components/assets/Teams/photo (2).png";
 
 const Teams = () => {
-  // Team members data
+  // Team members data - Using two PNG images as placeholders
   const teamMembers = [
     {
       id: 1,
@@ -43,42 +37,42 @@ const Teams = () => {
       id: 3,
       name: "Team Member",
       role: "Travel Advisor",
-      image: teamPhoto3,
+      image: teamPhoto1,
       description: "Creating unforgettable travel experiences",
     },
     {
       id: 4,
       name: "Team Member",
       role: "Customer Service",
-      image: teamPhoto4,
+      image: teamPhoto2,
       description: "Dedicated to exceptional client satisfaction",
     },
     {
       id: 5,
       name: "Team Member",
       role: "Travel Expert",
-      image: teamPhoto5,
+      image: teamPhoto1,
       description: "Expertise in global travel solutions",
     },
     {
       id: 6,
       name: "Team Member",
       role: "Visa Consultant",
-      image: teamPhoto6,
+      image: teamPhoto2,
       description: "Professional visa processing services",
     },
     {
       id: 7,
       name: "Team Member",
       role: "Travel Coordinator",
-      image: teamPhoto7,
+      image: teamPhoto1,
       description: "Seamless travel arrangements worldwide",
     },
     {
       id: 8,
       name: "Team Member",
       role: "Senior Advisor",
-      image: teamPhoto8,
+      image: teamPhoto2,
       description: "Years of experience in travel industry",
     },
   ];
