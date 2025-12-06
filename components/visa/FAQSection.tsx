@@ -6,13 +6,13 @@ import { contact, company } from "@/lib/config";
 import { faqs as faqsConfig } from "@/lib/config/visa/singapore";
 
 interface FAQItem {
-  question: string;
-  answer: string;
-  links?: Array<{ text: string; url: string }>;
-  contactInfo?: {
-    phone: string;
-    email: string;
-    address: string;
+  readonly question: string;
+  readonly answer: string;
+  readonly links?: ReadonlyArray<{ readonly text: string; readonly url: string }>;
+  readonly contactInfo?: {
+    readonly phone: string;
+    readonly email: string;
+    readonly address: string;
   };
 }
 
@@ -20,7 +20,7 @@ const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   // Use FAQs from config
-  const faqs: FAQItem[] = faqsConfig;
+  const faqs: readonly FAQItem[] = faqsConfig;
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
