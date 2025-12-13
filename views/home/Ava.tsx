@@ -112,7 +112,7 @@ const Ava = () => {
         {/* CTA Button */}
         <div className="flex justify-center mt-10 md:mt-12">
           <Link
-            href="/ava"
+            href="/visa/singapore-visa-processing"
             className="group relative bg-primary text-white px-8 md:px-12 py-4 md:py-5 rounded-xl font-semibold text-base md:text-lg hover:bg-secondary transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary/30 transform hover:scale-105 inline-flex items-center gap-2"
           >
             <span>Learn More About Singapore AVA</span>
