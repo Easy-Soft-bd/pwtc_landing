@@ -1,6 +1,6 @@
 /**
  * Global Site Configuration - Single Source of Truth
- * 
+ *
  * This file contains all company-wide configuration data including:
  * - Company information
  * - Contact details
@@ -8,7 +8,7 @@
  * - Services
  * - Authorizations
  * - Statistics
- * 
+ *
  * Note: Page-specific configurations (e.g., Singapore visa) are stored in
  * modular folders under lib/config/ for better organization.
  */
@@ -19,8 +19,10 @@
 export const company = {
   name: "Privileged World Travel Club",
   shortName: "PWTC",
-  tagline: "Your trusted partner for premium travel experiences and expert visa processing services",
-  description: "Privileged World Travel Club is a leading travel and visa services company based in Dhaka, Bangladesh. With over 16 years of experience in the travel industry, we have established ourselves as a trusted partner for thousands of travelers seeking premium travel experiences and reliable visa processing services.",
+  tagline:
+    "Your trusted partner for premium travel experiences and expert visa processing services in Bangladesh",
+  description:
+    "Privileged World Travel Club is a leading travel and visa services company based in Dhaka, Bangladesh. With over 16 years of experience in the travel industry, we have established ourselves as a trusted partner for thousands of travelers seeking premium travel experiences and reliable visa processing services in Bangladesh.",
   founded: "2008", // Approximate founding year (16+ years from 2024)
   yearsOfExperience: "16+",
 } as const;
@@ -134,7 +136,8 @@ export const services = [
   {
     id: 3,
     title: "International & Domestic Tour Packages",
-    description: "Curated travel experiences designed for unforgettable memories",
+    description:
+      "Curated travel experiences designed for unforgettable memories",
     icon: "Map",
   },
   {
@@ -221,7 +224,6 @@ export const statistics = [
   },
 ] as const;
 
-
 // ============================================================================
 // Why Choose Us
 // ============================================================================
@@ -229,32 +231,38 @@ export const whyChooseUs = [
   {
     icon: "Award",
     title: "Authorized & Certified",
-    description: "Singapore Authorized Visa Agent (AVA) recognized by the High Commission of Singapore in Dhaka",
+    description:
+      "Singapore Authorized Visa Agent (AVA) recognized by the High Commission of Singapore in Dhaka",
   },
   {
     icon: "Shield",
     title: "Trusted & Reliable",
-    description: "Official recognition from Ministry of Tourism, IATA, ATAB, and TOAB",
+    description:
+      "Official recognition from Ministry of Tourism, IATA, ATAB, and TOAB",
   },
   {
     icon: "Users",
     title: "Expert Team",
-    description: "Experienced professionals dedicated to providing exceptional service",
+    description:
+      "Experienced professionals dedicated to providing exceptional service",
   },
   {
     icon: "Clock",
     title: "Fast Processing",
-    description: "Efficient visa processing with high success rates and quick turnaround times",
+    description:
+      "Efficient visa processing with high success rates and quick turnaround times",
   },
   {
     icon: "Globe",
     title: "Global Reach",
-    description: "Comprehensive travel services covering destinations worldwide",
+    description:
+      "Comprehensive travel services covering destinations worldwide",
   },
   {
     icon: "Heart",
     title: "Customer Focused",
-    description: "Personalized service tailored to meet your unique travel needs",
+    description:
+      "Personalized service tailored to meet your unique travel needs",
   },
 ] as const;
 
@@ -282,4 +290,3 @@ export const getEmailLink = (): string => {
 export const getFullAddress = (): string => {
   return contact.address.full;
 };
-
