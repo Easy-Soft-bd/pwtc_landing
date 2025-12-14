@@ -4,6 +4,7 @@ import Ava from "./Ava";
 import Statistics from "./Statistics";
 import Services from "./Services";
 import Cta from "./Cta";
+import ImgSlider from "@/components/imgSlider";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Ava />
       <Statistics />
       <Services />
+      <ImgSlider />
       <Cta />
     </>
   );

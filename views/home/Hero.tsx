@@ -25,6 +25,10 @@ const Hero = () => {
   const parallaxRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const heroImages = [
+    { src: "/bg/bg.jpg", alt: "Background Image" },
+    { src: "/bg/bg1.jpg", alt: "Background Image 1" },
+    { src: "/bg/bg2.jpg", alt: "Background Image 2" },
+    { src: "/bg/bg3.jpg", alt: "Background Image 3" },
     { src: hero1, alt: "Hero Image 1" },
     { src: hero2, alt: "Hero Image 2" },
     { src: hero3, alt: "Hero Image 3" },
