@@ -65,6 +65,7 @@ export const routes = {
   contact: "#contact",
   teams: "/teams",
   authorizations: "/authorizations",
+  hire: "/hire",
 } as const;
 
 export const navigation = {
@@ -81,6 +82,7 @@ export const navigation = {
       { href: routes.services, label: "Services" },
       { href: routes.teams, label: "Our Team" },
       { href: routes.authorizations, label: "Authorizations" },
+      { href: routes.hire, label: "Hire" },
     ],
     services: [
       { href: "#air-tickets", label: "Air Tickets" },
