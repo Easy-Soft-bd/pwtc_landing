@@ -322,7 +322,7 @@ const SingaporeVisaPage = () => {
                           <Clock className="w-4 h-4 text-secondary/60" />
                           <span className="font-medium">
                             Last Updated:{" "}
-                            <time dateTime="2024-12-19">November 30, 2025</time>
+                            <time dateTime="2024-12-19">December 31, 2025</time>
                           </span>
                         </div>
                       </div>
