@@ -13,67 +13,79 @@ import Link from "next/link";
 import { routes, company } from "@/lib/config";
 
 // Import team photos from Teams folder (PNG)
-import teamPhoto1 from "@/components/assets/Teams/photo (1).png";
-import teamPhoto2 from "@/components/assets/Teams/photo (2).png";
+import ceoPic from "@/components/assets/Teams/ceo.png";
+import HemaPic from "@/components/assets/Teams/hema.png";
+import KeyaPic from "@/components/assets/Teams/keya.png";
+import TakaddoomPic from "@/components/assets/Teams/taka.png";
+import TahsinPic from "@/components/assets/Teams/ahmed.png";
+import MouPic from "@/components/assets/Teams/mou.png";
+import RabbiPic from "@/components/assets/Teams/rabbi.png";
+import EmonPic from "@/components/assets/Teams/emon.png";
 
 const Teams = () => {
   // Team members data - Using two PNG images as placeholders
   const teamMembers = [
     {
       id: 1,
-      name: "Team Member",
-      role: "Travel Consultant",
-      image: teamPhoto1,
-      description: "Expert in visa processing and travel planning",
+      name: "MD Masud Parvez",
+      role: "CEO & Founder",
+      image: ceoPic,
+      description: "CEO & Founder of Privilege World Travel Club",
     },
     {
       id: 2,
-      name: "Team Member",
-      role: "Visa Specialist",
-      image: teamPhoto2,
-      description: "Specialized in international visa applications",
+      name: "MST. Rabeya Akter",
+      role: "Proprietor & Founder",
+      image: HemaPic,
+      description: "Proprietor & Founder of Privilege World Travel Club",
     },
     {
       id: 3,
-      name: "Team Member",
-      role: "Travel Advisor",
-      image: teamPhoto1,
-      description: "Creating unforgettable travel experiences",
+      name: "Keya Mir",
+      role: "Manager and Admin",
+      image: KeyaPic,
+      description:
+        "Manager of Privilege World Travel Club. She is the backbone of the company.",
     },
     {
       id: 4,
-      name: "Team Member",
-      role: "Customer Service",
-      image: teamPhoto2,
-      description: "Dedicated to exceptional client satisfaction",
+      name: "Mir Takaddoom Ali",
+      role: "Senior Visa Executive",
+      image: TakaddoomPic,
+      description:
+        "Senior Visa Executive of Privilege World Travel Club. He is the expert in visa processing and travel planning.",
     },
     {
       id: 5,
-      name: "Team Member",
-      role: "Travel Expert",
-      image: teamPhoto1,
-      description: "Expertise in global travel solutions",
+      name: "Md Tahsin Ahmed",
+      role: "Visa Executive",
+      image: TahsinPic,
+      description:
+        "Visa Executive of Privilege World Travel Club. He is the expert in visa processing and travel planning.",
     },
     {
       id: 6,
-      name: "Team Member",
-      role: "Visa Consultant",
-      image: teamPhoto2,
-      description: "Professional visa processing services",
+      name: "Tabassum Akter Mou",
+      role: "Visa Executive",
+      image: MouPic,
+      description:
+        "Visa Executive of Privilege World Travel Club. He is the expert in visa processing and travel planning.",
     },
     {
       id: 7,
-      name: "Team Member",
-      role: "Travel Coordinator",
-      image: teamPhoto1,
-      description: "Seamless travel arrangements worldwide",
+      name: "Rabbi Hossain",
+      role: "Visa Executive",
+      image: RabbiPic,
+      description:
+        "Visa Executive of Privilege World Travel Club. He is the expert in visa processing and travel planning.",
     },
     {
       id: 8,
-      name: "Team Member",
-      role: "Senior Advisor",
-      image: teamPhoto2,
-      description: "Years of experience in travel industry",
+      name: "Abu Rayhan Emon",
+      role: "Visa Executive",
+      image: EmonPic,
+      description:
+        "Visa Executive of Privilege World Travel Club. He is the expert in visa processing and travel planning.",
     },
   ];
 
