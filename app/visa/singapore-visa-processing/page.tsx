@@ -22,7 +22,8 @@ import {
 import FAQSection from "@/components/visa/FAQSection";
 
 export const metadata: Metadata = {
-  title: "Singapore Visa Processing - Privileged World Travel Club | Authorized Visa Agent",
+  title:
+    "Singapore Visa Processing - Privileged World Travel Club | Authorized Visa Agent",
   description:
     "Apply for your Singapore visa through Privileged World Travel Club, a Singapore Authorized Visa Agent (AVA). Professional visa processing services in Dhaka, Bangladesh. Get expert assistance with your Singapore visa application.",
   keywords: [
@@ -41,7 +42,8 @@ const SingaporeVisaPage = () => {
     {
       icon: FileText,
       title: "Valid Passport",
-      description: "Passport valid for at least 6 months from the date of arrival in Singapore",
+      description:
+        "Passport valid for at least 6 months from the date of arrival in Singapore",
     },
     {
       icon: FileText,
@@ -51,12 +53,14 @@ const SingaporeVisaPage = () => {
     {
       icon: FileText,
       title: "Letter of Introduction (LOI) - Form V39A",
-      description: "A completed Form V39A (Letter of Introduction for Visa Application), which may be issued by a local contact in Singapore (Singapore Citizen or Permanent Resident, at least 21 years old with Singpass account)",
+      description:
+        "A completed Form V39A (Letter of Introduction for Visa Application), which may be issued by a local contact in Singapore (Singapore Citizen or Permanent Resident, at least 21 years old with Singpass account)",
     },
     {
       icon: FileText,
       title: "Passport Photo",
-      description: "Recent passport-sized photograph (taken within 3 months, white background, full face without headgear)",
+      description:
+        "Recent passport-sized photograph (taken within 3 months, white background, full face without headgear)",
     },
     {
       icon: FileText,
@@ -84,10 +88,14 @@ const SingaporeVisaPage = () => {
               </span>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-white mb-4 sm:mb-6 tracking-tight leading-tight drop-shadow-lg">
-              Apply for Singapore Visa with<br className="hidden sm:block" /> Privileged World Travel Club
+              Apply for Singapore Visa with
+              <br className="hidden sm:block" /> Privileged World Travel Club
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-white/95 max-w-4xl mx-auto leading-relaxed font-medium px-4 sm:px-6">
-              As a Singapore Authorized Visa Agent, we provide professional visa processing services to help you get your Singapore visa quickly and efficiently. Visit our office or contact us to start your application today.
+              As a Singapore Authorized Visa Agent, we provide professional visa
+              processing services to help you get your Singapore visa quickly
+              and efficiently. Visit our office or contact us to start your
+              application today.
             </p>
           </div>
         </div>
@@ -122,7 +130,8 @@ const SingaporeVisaPage = () => {
                 Singapore Visa Information
               </h2>
               <p className="text-base sm:text-lg md:text-xl text-secondary/80 max-w-3xl mx-auto mb-4 sm:mb-6 px-4 leading-relaxed font-medium">
-                Official information from the High Commission of the Republic of Singapore in Dhaka
+                Official information from the High Commission of the Republic of
+                Singapore in Dhaka
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8">
                 <a
@@ -159,12 +168,20 @@ const SingaporeVisaPage = () => {
                   </h2>
                   <div className="space-y-4 text-sm sm:text-base md:text-lg text-secondary/80 leading-relaxed">
                     <p>
-                      Visitors holding ordinary Bangladeshi passports must apply for an entry visa prior to their arrival in Singapore. Holders of Bangladeshi Diplomatic and Official passports are exempted from visa requirements.
+                      Visitors holding ordinary Bangladeshi passports must apply
+                      for an entry visa prior to their arrival in Singapore.
+                      Holders of Bangladeshi Diplomatic and Official passports
+                      are exempted from visa requirements.
                     </p>
                     <div className="relative pl-4 sm:pl-6 border-l-2 border-primary/30 mt-4 sm:mt-6">
                       <p className="text-foreground font-medium text-sm sm:text-base">
                         <span className="absolute left-0 top-0 bottom-0 w-0.5 bg-primary"></span>
-                        <strong className="text-primary">Important:</strong> A Singapore visa is not an immigration pass but a pre-entry permission. The grant of an immigration pass is determined by ICA officers at the point of entry. Possession of a valid visa does not guarantee entry into Singapore.
+                        <strong className="text-primary">Important:</strong> A
+                        Singapore visa is not an immigration pass but a
+                        pre-entry permission. The grant of an immigration pass
+                        is determined by ICA officers at the point of entry.
+                        Possession of a valid visa does not guarantee entry into
+                        Singapore.
                       </p>
                     </div>
                   </div>
@@ -177,7 +194,7 @@ const SingaporeVisaPage = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-surface via-surface/95 to-surface border border-primary/10 shadow-xl"></div>
                 {/* Subtle Hover Border */}
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 rounded-2xl md:rounded-3xl opacity-0 group-hover:opacity-100 blur transition-opacity duration-500"></div>
-                
+
                 <div className="relative p-6 sm:p-8 md:p-10 lg:p-12">
                   {/* Header Section */}
                   <div className="flex items-center gap-4 mb-8 md:mb-10 pb-6 border-b border-primary/10">
@@ -200,17 +217,21 @@ const SingaporeVisaPage = () => {
                       {/* Decorative Elements */}
                       <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full blur-3xl"></div>
                       <div className="absolute bottom-0 left-0 w-24 h-24 bg-secondary/5 rounded-full blur-2xl"></div>
-                      
+
                       {/* Classic Shine Effect */}
                       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/8 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                      
+
                       <div className="relative text-center z-10">
                         <p className="text-xs sm:text-sm text-secondary/60 uppercase tracking-wider font-semibold mb-2 transition-colors duration-300">
                           Total Visa Fees Payable
                         </p>
                         <div className="mb-2">
-                          <span className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary tracking-tight">BDT</span>
-                          <span className="text-5xl sm:text-6xl md:text-7xl font-bold text-primary ml-2 tracking-tight">3,990</span>
+                          <span className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary tracking-tight">
+                            BDT
+                          </span>
+                          <span className="text-5xl sm:text-6xl md:text-7xl font-bold text-primary ml-2 tracking-tight">
+                            4,130
+                          </span>
                         </div>
                         <p className="text-xs sm:text-sm text-secondary/60 font-medium transition-colors duration-300">
                           per applicant
@@ -231,9 +252,13 @@ const SingaporeVisaPage = () => {
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                         <div className="relative flex items-center gap-3 z-10">
                           <div className="w-1.5 h-1.5 bg-secondary/60 rounded-full group-hover:bg-secondary transition-colors duration-300"></div>
-                          <span className="text-sm sm:text-base text-secondary/80 font-medium group-hover:text-foreground transition-colors duration-300">Visa Cost (Equivalent to SGD $30)</span>
+                          <span className="text-sm sm:text-base text-secondary/80 font-medium group-hover:text-foreground transition-colors duration-300">
+                            Visa Cost (Equivalent to SGD $30)
+                          </span>
                         </div>
-                        <span className="relative text-base sm:text-lg md:text-xl font-bold text-foreground transition-colors duration-300 z-10">BDT 2,690</span>
+                        <span className="relative text-base sm:text-lg md:text-xl font-bold text-foreground transition-colors duration-300 z-10">
+                          BDT 2,830
+                        </span>
                       </div>
 
                       {/* Service Charge Row */}
@@ -242,9 +267,13 @@ const SingaporeVisaPage = () => {
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                         <div className="relative flex items-center gap-3 z-10">
                           <div className="w-1.5 h-1.5 bg-secondary/60 rounded-full group-hover:bg-secondary transition-colors duration-300"></div>
-                          <span className="text-sm sm:text-base text-secondary/80 font-medium group-hover:text-foreground transition-colors duration-300">Service Charge</span>
+                          <span className="text-sm sm:text-base text-secondary/80 font-medium group-hover:text-foreground transition-colors duration-300">
+                            Service Charge
+                          </span>
                         </div>
-                        <span className="relative text-base sm:text-lg md:text-xl font-bold text-foreground transition-colors duration-300 z-10">BDT 1,300</span>
+                        <span className="relative text-base sm:text-lg md:text-xl font-bold text-foreground transition-colors duration-300 z-10">
+                          BDT 1,300
+                        </span>
                       </div>
 
                       {/* Total Cost Row - Highlighted */}
@@ -253,9 +282,13 @@ const SingaporeVisaPage = () => {
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                         <div className="relative flex items-center gap-3 z-10">
                           <Award className="w-5 h-5 text-primary transition-colors duration-300" />
-                          <span className="text-base sm:text-lg font-bold text-foreground transition-colors duration-300">Total Cost</span>
+                          <span className="text-base sm:text-lg font-bold text-foreground transition-colors duration-300">
+                            Total Cost
+                          </span>
                         </div>
-                        <span className="relative text-xl sm:text-2xl md:text-3xl font-bold text-primary transition-colors duration-300 z-10">BDT 3,990</span>
+                        <span className="relative text-xl sm:text-2xl md:text-3xl font-bold text-primary transition-colors duration-300 z-10">
+                          BDT 4,130
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -265,7 +298,9 @@ const SingaporeVisaPage = () => {
                     <AlertCircle className="w-5 h-5 text-primary mt-0.5 shrink-0" />
                     <div>
                       <p className="text-sm sm:text-base text-secondary/80 font-medium leading-relaxed">
-                        <strong className="text-foreground">Important:</strong> Visa fees are non-refundable regardless of application outcome.
+                        <strong className="text-foreground">Important:</strong>{" "}
+                        Visa fees are non-refundable regardless of application
+                        outcome.
                       </p>
                     </div>
                   </div>
@@ -279,11 +314,16 @@ const SingaporeVisaPage = () => {
                           Important Notice
                         </p>
                         <p className="text-xs sm:text-sm text-secondary/80 mb-3 leading-relaxed">
-                          Visa fees are subject to change without notice. Please verify the current fees directly from the official sources before submitting your application.
+                          Visa fees are subject to change without notice. Please
+                          verify the current fees directly from the official
+                          sources before submitting your application.
                         </p>
                         <div className="flex items-center gap-2 text-xs sm:text-sm text-secondary/70">
                           <Clock className="w-4 h-4 text-secondary/60" />
-                          <span className="font-medium">Last Updated: <time dateTime="2024-12-19">November 30, 2025</time></span>
+                          <span className="font-medium">
+                            Last Updated:{" "}
+                            <time dateTime="2024-12-19">November 30, 2025</time>
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -323,12 +363,32 @@ const SingaporeVisaPage = () => {
                         </h3>
                         <div className="space-y-2 sm:space-y-3">
                           <p className="text-sm sm:text-base md:text-lg text-secondary/80 leading-relaxed">
-                            According to <a href="https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements/visa-detail-page/bangladesh" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">ICA official website</a>, your visa application will be processed within <strong className="text-foreground">three working days</strong> (excluding the day of submission). However, some applications may take longer to process.
+                            According to{" "}
+                            <a
+                              href="https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements/visa-detail-page/bangladesh"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-primary hover:underline font-semibold"
+                            >
+                              ICA official website
+                            </a>
+                            , your visa application will be processed within{" "}
+                            <strong className="text-foreground">
+                              three working days
+                            </strong>{" "}
+                            (excluding the day of submission). However, some
+                            applications may take longer to process.
                           </p>
                           <div className="flex items-start gap-2 sm:gap-3 p-3 sm:p-4 bg-primary/5 rounded-lg sm:rounded-xl border border-primary/15">
                             <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 shrink-0" />
                             <p className="text-xs sm:text-sm md:text-base text-secondary/80">
-                              <strong className="text-foreground">Note:</strong> Processing time at the Singapore High Commission in Dhaka may vary. Minimum 5 (five) working days to 1 month or more, depending on the Singapore Embassy Dhaka. You are advised to apply for an entry visa within 30 days prior to arrival in Singapore.
+                              <strong className="text-foreground">Note:</strong>{" "}
+                              Processing time at the Singapore High Commission
+                              in Dhaka may vary. Minimum 5 (five) working days
+                              to 1 month or more, depending on the Singapore
+                              Embassy Dhaka. You are advised to apply for an
+                              entry visa within 30 days prior to arrival in
+                              Singapore.
                             </p>
                           </div>
                         </div>
@@ -343,7 +403,7 @@ const SingaporeVisaPage = () => {
                       <div className="relative p-5 sm:p-6 md:p-8 border-2 border-light/20 rounded-2xl sm:rounded-3xl backdrop-blur-md bg-surface/60 overflow-hidden transition-all duration-300 group-hover/item:border-secondary/30 group-hover/item:bg-surface/80 group-hover/item:-translate-y-0.5 shadow-lg group-hover/item:shadow-xl">
                         {/* Classic Shine Effect */}
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/8 to-transparent -translate-x-full group-hover/item:translate-x-full transition-transform duration-700"></div>
-                        
+
                         <div className="relative flex items-center gap-3 sm:gap-4 mb-4 sm:mb-5 z-10">
                           <div className="relative">
                             <div className="absolute inset-0 bg-secondary/10 rounded-xl blur-md"></div>
@@ -358,7 +418,11 @@ const SingaporeVisaPage = () => {
                         <div className="relative space-y-2 z-10">
                           <div className="flex items-center gap-2 text-sm sm:text-base md:text-lg text-secondary/80">
                             <span className="w-2 h-2 sm:w-3 sm:h-3 bg-secondary/60 rounded-full shrink-0 transition-colors duration-300"></span>
-                            <span><strong className="text-foreground font-bold transition-colors duration-300">Sunday – Thursday</strong></span>
+                            <span>
+                              <strong className="text-foreground font-bold transition-colors duration-300">
+                                Sunday – Thursday
+                              </strong>
+                            </span>
                           </div>
                           <div className="pl-3 sm:pl-4 text-base sm:text-lg md:text-xl font-extrabold text-secondary transition-colors duration-300">
                             9:00 AM – 2:00 PM
@@ -372,7 +436,7 @@ const SingaporeVisaPage = () => {
                       <div className="relative p-5 sm:p-6 md:p-8 border-2 border-light/20 rounded-2xl sm:rounded-3xl backdrop-blur-md bg-surface/60 overflow-hidden transition-all duration-300 group-hover/item:border-secondary/30 group-hover/item:bg-surface/80 group-hover/item:-translate-y-0.5 shadow-lg group-hover/item:shadow-xl">
                         {/* Classic Shine Effect */}
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/8 to-transparent -translate-x-full group-hover/item:translate-x-full transition-transform duration-700"></div>
-                        
+
                         <div className="relative flex items-center gap-3 sm:gap-4 mb-4 sm:mb-5 z-10">
                           <div className="relative">
                             <div className="absolute inset-0 bg-secondary/10 rounded-xl blur-md"></div>
@@ -387,7 +451,11 @@ const SingaporeVisaPage = () => {
                         <div className="relative space-y-2 z-10">
                           <div className="flex items-center gap-2 text-sm sm:text-base md:text-lg text-secondary/80">
                             <span className="w-2 h-2 sm:w-3 sm:h-3 bg-secondary/60 rounded-full shrink-0 transition-colors duration-300"></span>
-                            <span><strong className="text-foreground font-bold transition-colors duration-300">Sunday – Thursday</strong></span>
+                            <span>
+                              <strong className="text-foreground font-bold transition-colors duration-300">
+                                Sunday – Thursday
+                              </strong>
+                            </span>
                           </div>
                           <div className="pl-3 sm:pl-4 text-base sm:text-lg md:text-xl font-extrabold text-secondary transition-colors duration-300">
                             9:00 AM – 4:00 PM
@@ -413,25 +481,74 @@ const SingaporeVisaPage = () => {
                         Apply Through Privileged World Travel Club
                       </p>
                       <p className="text-sm sm:text-base md:text-lg text-secondary/80 leading-relaxed">
-                        As a <strong className="text-primary">Singapore Authorized Visa Agent (AVA)</strong>, Privileged World Travel Club is authorized by the High Commission of Singapore in Dhaka to process and submit visa applications. We provide professional, reliable, and efficient visa processing services to help you get your Singapore visa approved.
+                        As a{" "}
+                        <strong className="text-primary">
+                          Singapore Authorized Visa Agent (AVA)
+                        </strong>
+                        , Privileged World Travel Club is authorized by the High
+                        Commission of Singapore in Dhaka to process and submit
+                        visa applications. We provide professional, reliable,
+                        and efficient visa processing services to help you get
+                        your Singapore visa approved.
                       </p>
                     </div>
                     <p>
-                      According to <a href="https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements/visa-detail-page/bangladesh" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">ICA guidelines</a>, your visa application can be submitted:
+                      According to{" "}
+                      <a
+                        href="https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements/visa-detail-page/bangladesh"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary hover:underline font-semibold"
+                      >
+                        ICA guidelines
+                      </a>
+                      , your visa application can be submitted:
                     </p>
                     <ul className="space-y-2 pl-4">
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0"></span>
-                        <span><strong className="text-foreground">Through an Authorized Visa Agent (Recommended):</strong> In Dhaka, applications must be submitted online through one of the High Commission&apos;s <strong className="text-primary">Authorised Visa Agents</strong>. <strong className="text-primary">Privileged World Travel Club</strong> is an authorized agent and can handle your complete visa application process. Visit our office or contact us to get started.</span>
+                        <span>
+                          <strong className="text-foreground">
+                            Through an Authorized Visa Agent (Recommended):
+                          </strong>{" "}
+                          In Dhaka, applications must be submitted online
+                          through one of the High Commission&apos;s{" "}
+                          <strong className="text-primary">
+                            Authorised Visa Agents
+                          </strong>
+                          .{" "}
+                          <strong className="text-primary">
+                            Privileged World Travel Club
+                          </strong>{" "}
+                          is an authorized agent and can handle your complete
+                          visa application process. Visit our office or contact
+                          us to get started.
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0"></span>
-                        <span><strong className="text-foreground">Online in Singapore:</strong> Your visa application can be submitted online using the e-Service through a strategic partner or a local contact in Singapore.</span>
+                        <span>
+                          <strong className="text-foreground">
+                            Online in Singapore:
+                          </strong>{" "}
+                          Your visa application can be submitted online using
+                          the e-Service through a strategic partner or a local
+                          contact in Singapore.
+                        </span>
                       </li>
                     </ul>
                     <div className="mt-4 p-3 sm:p-4 bg-primary/5 rounded-lg sm:rounded-xl border border-primary/15">
                       <p className="text-xs sm:text-sm md:text-base text-secondary/80">
-                        <strong className="text-foreground">Important:</strong> You are advised to apply for an entry visa within <strong className="text-foreground">30 days prior to arrival</strong> in Singapore. <strong className="text-primary">Contact Privileged World Travel Club today</strong> to start your visa application process.
+                        <strong className="text-foreground">Important:</strong>{" "}
+                        You are advised to apply for an entry visa within{" "}
+                        <strong className="text-foreground">
+                          30 days prior to arrival
+                        </strong>{" "}
+                        in Singapore.{" "}
+                        <strong className="text-primary">
+                          Contact Privileged World Travel Club today
+                        </strong>{" "}
+                        to start your visa application process.
                       </p>
                     </div>
                   </div>
@@ -451,7 +568,8 @@ const SingaporeVisaPage = () => {
                         Where to Apply
                       </h2>
                       <p className="text-sm sm:text-base text-secondary/70">
-                        Visit Privileged World Travel Club - Singapore Authorized Visa Agent
+                        Visit Privileged World Travel Club - Singapore
+                        Authorized Visa Agent
                       </p>
                     </div>
                   </div>
@@ -462,10 +580,17 @@ const SingaporeVisaPage = () => {
                         Apply at Privileged World Travel Club
                       </p>
                       <p className="text-sm sm:text-base md:text-lg text-secondary/80 leading-relaxed">
-                        As a <strong className="text-primary">Singapore Authorized Visa Agent (AVA)</strong>, we are authorized by the High Commission of Singapore in Dhaka to process and submit visa applications. Visit our office to submit your application and get professional assistance throughout the process.
+                        As a{" "}
+                        <strong className="text-primary">
+                          Singapore Authorized Visa Agent (AVA)
+                        </strong>
+                        , we are authorized by the High Commission of Singapore
+                        in Dhaka to process and submit visa applications. Visit
+                        our office to submit your application and get
+                        professional assistance throughout the process.
                       </p>
                     </div>
-                    
+
                     <div className="relative group">
                       <div className="absolute inset-0 bg-primary/5 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       <div className="relative p-4 sm:p-6 md:p-8 border border-primary/15 rounded-xl sm:rounded-2xl bg-surface/50 backdrop-blur-sm group-hover:border-primary/25 transition-colors duration-300">
@@ -486,21 +611,30 @@ const SingaporeVisaPage = () => {
                               <div className="flex items-start gap-2 sm:gap-3">
                                 <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-1 shrink-0" />
                                 <div className="text-sm sm:text-base md:text-lg text-secondary/80 leading-relaxed min-w-0">
-                                  <p className="font-semibold text-foreground mb-1">Office Address:</p>
-                                  <p className="break-words">Room 33-34, (5th floor), Mukto Bangla Shopping Complex, Mirpur-1, Dhaka 1216</p>
+                                  <p className="font-semibold text-foreground mb-1">
+                                    Office Address:
+                                  </p>
+                                  <p className="break-words">
+                                    Room 33-34, (5th floor), Mukto Bangla
+                                    Shopping Complex, Mirpur-1, Dhaka 1216
+                                  </p>
                                 </div>
                               </div>
                               <div className="flex items-start gap-2 sm:gap-3">
                                 <Send className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-1 shrink-0" />
                                 <div className="text-sm sm:text-base md:text-lg text-secondary/80 leading-relaxed">
-                                  <p className="font-semibold text-foreground mb-1">Application Hours:</p>
+                                  <p className="font-semibold text-foreground mb-1">
+                                    Application Hours:
+                                  </p>
                                   <p>Sunday – Thursday: 9:00 AM – 2:00 PM</p>
                                 </div>
                               </div>
                               <div className="flex items-start gap-2 sm:gap-3">
                                 <Package className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-1 shrink-0" />
                                 <div className="text-sm sm:text-base md:text-lg text-secondary/80 leading-relaxed">
-                                  <p className="font-semibold text-foreground mb-1">Passport Collection Hours:</p>
+                                  <p className="font-semibold text-foreground mb-1">
+                                    Passport Collection Hours:
+                                  </p>
                                   <p>Sunday – Thursday: 9:00 AM – 4:00 PM</p>
                                 </div>
                               </div>
@@ -520,7 +654,9 @@ const SingaporeVisaPage = () => {
                   <div className="flex items-start justify-between gap-4 mb-6 sm:mb-8">
                     <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground flex items-center gap-2 sm:gap-3">
                       <CheckCircle className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-success shrink-0" />
-                      <span className="break-words">Letter of Introduction (LOI) - Form V39A</span>
+                      <span className="break-words">
+                        Letter of Introduction (LOI) - Form V39A
+                      </span>
                     </h2>
                     <a
                       href="https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements/visa-detail-page/bangladesh"
@@ -540,7 +676,14 @@ const SingaporeVisaPage = () => {
                           For social visitors:
                         </p>
                         <p className="text-sm sm:text-base md:text-lg text-secondary/80 leading-relaxed">
-                          The local contact must be either a <strong className="text-foreground">Singapore Citizen (SC) or a Singapore Permanent Resident (PR) who is at least 21 years old with a Singpass account</strong>. LOIs issued by your Embassy can also be accepted if you are unable to secure an LOI from a local contact.
+                          The local contact must be either a{" "}
+                          <strong className="text-foreground">
+                            Singapore Citizen (SC) or a Singapore Permanent
+                            Resident (PR) who is at least 21 years old with a
+                            Singpass account
+                          </strong>
+                          . LOIs issued by your Embassy can also be accepted if
+                          you are unable to secure an LOI from a local contact.
                         </p>
                       </div>
                     </div>
@@ -551,13 +694,32 @@ const SingaporeVisaPage = () => {
                           For business visitors:
                         </p>
                         <p className="text-sm sm:text-base md:text-lg text-secondary/80 leading-relaxed">
-                          If you are applying for an entry visa for business visit (attending business negotiations or discussions), the local contact must be acting on behalf of a <strong className="text-foreground">Singapore-registered business entity</strong>. The LOI must be signed by a Singapore Citizen or Singapore Permanent Resident, who is at least 21 years old.
+                          If you are applying for an entry visa for business
+                          visit (attending business negotiations or
+                          discussions), the local contact must be acting on
+                          behalf of a{" "}
+                          <strong className="text-foreground">
+                            Singapore-registered business entity
+                          </strong>
+                          . The LOI must be signed by a Singapore Citizen or
+                          Singapore Permanent Resident, who is at least 21 years
+                          old.
                         </p>
                       </div>
                     </div>
                     <div className="mt-4 p-3 sm:p-4 bg-success/5 rounded-lg sm:rounded-xl border border-success/15">
                       <p className="text-xs sm:text-sm md:text-base text-secondary/80">
-                        <strong className="text-foreground">Reference:</strong> Information based on <a href="https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements/visa-detail-page/bangladesh" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">ICA official website</a>.
+                        <strong className="text-foreground">Reference:</strong>{" "}
+                        Information based on{" "}
+                        <a
+                          href="https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements/visa-detail-page/bangladesh"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-primary hover:underline font-semibold"
+                        >
+                          ICA official website
+                        </a>
+                        .
                       </p>
                     </div>
                   </div>
@@ -610,21 +772,18 @@ const SingaporeVisaPage = () => {
               {requiredDocuments.map((doc, index) => {
                 const IconComponent = doc.icon;
                 return (
-                  <div
-                    key={index}
-                    className="group relative"
-                  >
+                  <div key={index} className="group relative">
                     {/* Premium Card with Gradient Border */}
                     <div className="relative h-full">
                       {/* Enhanced Gradient Border Effect */}
                       <div className="absolute -inset-1 bg-gradient-to-br from-primary via-accent to-primary rounded-3xl sm:rounded-[2rem] md:rounded-[2.5rem] opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-700"></div>
-                      
+
                       {/* Main Card */}
                       <div className="relative h-full bg-gradient-to-br from-surface/95 via-surface/90 to-surface/95 backdrop-blur-2xl border-2 border-light/30 rounded-3xl sm:rounded-[2rem] md:rounded-[2.5rem] p-7 sm:p-9 md:p-11 lg:p-12 transition-all duration-700 group-hover:border-primary/40 group-hover:shadow-2xl group-hover:shadow-primary/20 group-hover:-translate-y-2 group-hover:scale-[1.02]">
                         {/* Enhanced Number Badge */}
                         <div className="absolute -top-4 -right-4 w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-primary via-primary/90 to-primary rounded-full flex items-center justify-center shadow-2xl border-4 border-surface backdrop-blur-sm group-hover:scale-110 group-hover:rotate-12 transition-all duration-500">
                           <span className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white drop-shadow-lg">
-                            {String(index + 1).padStart(2, '0')}
+                            {String(index + 1).padStart(2, "0")}
                           </span>
                         </div>
 
@@ -657,7 +816,15 @@ const SingaporeVisaPage = () => {
                             <div className="mt-5 sm:mt-6 pt-5 sm:pt-6 border-t border-linear-to-r from-transparent via-primary/15 to-transparent pl-0 sm:pl-20 md:pl-24">
                               <div className="bg-primary/5 rounded-xl p-4 sm:p-5 border border-primary/10">
                                 <p className="text-xs sm:text-sm text-secondary/70 leading-relaxed">
-                                  <strong className="text-foreground font-semibold">Photo Specifications:</strong> Taken within 3 months, color photo against white background with matt or semi-matt finish, full face without headgear (religious/racial headgear acceptable but must not hide facial features), facial image between 25mm and 35mm from chin to crown.
+                                  <strong className="text-foreground font-semibold">
+                                    Photo Specifications:
+                                  </strong>{" "}
+                                  Taken within 3 months, color photo against
+                                  white background with matt or semi-matt
+                                  finish, full face without headgear
+                                  (religious/racial headgear acceptable but must
+                                  not hide facial features), facial image
+                                  between 25mm and 35mm from chin to crown.
                                 </p>
                               </div>
                             </div>
@@ -698,7 +865,10 @@ const SingaporeVisaPage = () => {
               Ready to Apply for Your Singapore Visa?
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-white/95 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed font-medium px-4">
-              Visit Privileged World Travel Club, a Singapore Authorized Visa Agent, and let our experienced team handle your visa application. We provide professional, reliable, and efficient visa processing services.
+              Visit Privileged World Travel Club, a Singapore Authorized Visa
+              Agent, and let our experienced team handle your visa application.
+              We provide professional, reliable, and efficient visa processing
+              services.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-8 sm:mb-10">
               <a
@@ -721,7 +891,8 @@ const SingaporeVisaPage = () => {
                 Visit Our Office:
               </p>
               <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed font-medium mb-3 sm:mb-4">
-                Room 33-34, (5th floor), Mukto Bangla Shopping Complex, Mirpur-1, Dhaka 1216
+                Room 33-34, (5th floor), Mukto Bangla Shopping Complex,
+                Mirpur-1, Dhaka 1216
               </p>
               <p className="text-xs sm:text-sm md:text-base text-white/80 font-semibold">
                 Application Hours: Sunday – Thursday, 9:00 AM – 2:00 PM
@@ -757,7 +928,8 @@ const SingaporeVisaPage = () => {
                 Important Download Links
               </h2>
               <p className="text-base sm:text-lg md:text-xl text-secondary/80 max-w-2xl mx-auto leading-relaxed">
-                Download the required forms and templates for your visa application
+                Download the required forms and templates for your visa
+                application
               </p>
             </div>
 
@@ -853,7 +1025,8 @@ const SingaporeVisaPage = () => {
                 Official References
               </h3>
               <p className="text-sm sm:text-base text-secondary/80 mb-4 leading-relaxed">
-                For the most up-to-date and comprehensive information, please refer to the official sources:
+                For the most up-to-date and comprehensive information, please
+                refer to the official sources:
               </p>
 
               {/* Last Updated Time & Warning Note */}
@@ -865,11 +1038,16 @@ const SingaporeVisaPage = () => {
                       Important Notice
                     </p>
                     <p className="text-xs sm:text-sm text-secondary/80 mb-3 leading-relaxed">
-                      Visa requirements and procedures may change without notice. Please verify all information directly from the official sources before submitting your application.
+                      Visa requirements and procedures may change without
+                      notice. Please verify all information directly from the
+                      official sources before submitting your application.
                     </p>
                     <div className="flex items-center gap-2 text-xs sm:text-sm text-secondary/70">
                       <Clock className="w-4 h-4 text-secondary/60" />
-                      <span className="font-medium">Last Updated: <time dateTime="2024-12-19">November 30, 2025</time></span>
+                      <span className="font-medium">
+                        Last Updated:{" "}
+                        <time dateTime="2024-12-19">November 30, 2025</time>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -885,7 +1063,8 @@ const SingaporeVisaPage = () => {
                   <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5 text-primary group-hover:text-secondary transition-colors shrink-0" />
                   <div className="flex-1">
                     <p className="text-sm sm:text-base font-semibold text-foreground group-hover:text-primary transition-colors">
-                      Immigration & Checkpoints Authority (ICA) - Bangladesh Visa Requirements
+                      Immigration & Checkpoints Authority (ICA) - Bangladesh
+                      Visa Requirements
                     </p>
                     <p className="text-xs sm:text-sm text-secondary/70 mt-1">
                       Official visa requirements and procedures
