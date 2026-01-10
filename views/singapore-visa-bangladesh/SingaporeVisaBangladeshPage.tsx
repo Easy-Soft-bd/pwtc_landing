@@ -158,9 +158,7 @@ const SingaporeVisaBangladeshPage = () => {
                   <span className="font-bold text-[var(--primary)] text-lg mb-1">
                     {item.t}
                   </span>
-                  <span className="text-gray-600 text-sm">
-                    {item.desc || item.d}
-                  </span>
+                  <span className="text-gray-600 text-sm">{item.d}</span>
                 </div>
               ))}
             </div>
