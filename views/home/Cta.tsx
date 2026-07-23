@@ -1,151 +1,141 @@
 import Link from "next/link";
+import {
+  ArrowRight,
+  Phone,
+  Mail,
+  MapPin,
+  CheckCircle2,
+  Plane,
+} from "lucide-react";
+import { contact, routes, company } from "@/lib/config";
+
+const trustPoints = [
+  "100K+ Happy Clients",
+  "98% Visa Success Rate",
+  "16+ Years Experience",
+];
 
 const Cta = () => {
   return (
-    <section className="relative w-full py-16 md:py-24 bg-background overflow-hidden">
-      {/* Animated gradient background */}
-      <div className="absolute inset-0 bg-linear-to-br from-primary via-secondary to-tertiary opacity-10"></div>
-
-      {/* Decorative elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-10 left-10 w-32 h-32 border border-primary/20 rounded-full"></div>
-        <div className="absolute bottom-10 right-10 w-40 h-40 border border-accent/20 rounded-full"></div>
-        <div className="absolute top-1/2 left-1/4 w-24 h-24 border border-tertiary/20 rounded-full"></div>
-      </div>
-
-      {/* Mesh gradient overlay */}
-      <div className="absolute inset-0 bg-linear-to-r from-primary/5 via-transparent to-accent/5"></div>
-
-      <div className="relative container mx-auto px-6 md:px-8 lg:px-12">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 mb-6">
-            <div className="w-1 h-6 bg-linear-to-b from-primary to-accent rounded-full" />
-            <span className="text-primary font-semibold text-xs md:text-sm tracking-widest uppercase">
-              Get Started Today
-            </span>
-            <div className="w-1 h-6 bg-linear-to-b from-primary to-accent rounded-full" />
+    <section
+      id="contact"
+      className="relative w-full py-14 sm:py-16 md:py-20 lg:py-24 overflow-hidden"
+    >
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+        <div className="relative max-w-6xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden">
+          <div className="absolute inset-0 bg-linear-to-br from-primary via-secondary to-tertiary" />
+          <div className="absolute inset-0 opacity-30">
+            <div className="absolute -top-20 -left-20 w-64 h-64 rounded-full border border-white/20" />
+            <div className="absolute -bottom-16 -right-16 w-80 h-80 rounded-full border border-white/15" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-white/5 blur-3xl" />
           </div>
 
-          {/* Main Heading */}
-          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-6 leading-tight">
-            Ready to Embark on Your
-            <br />
-            <span className="relative inline-block">
-              <span className="relative z-10 text-primary">Dream Journey?</span>
-              <span className="absolute bottom-2 left-0 right-0 h-3 bg-primary/20 z-0" />
-            </span>
-          </h2>
+          <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 p-6 sm:p-8 md:p-10 lg:p-12 xl:p-14">
+            <div className="flex flex-col justify-center text-center lg:text-left">
+              <div className="inline-flex items-center justify-center lg:justify-start gap-2 mb-5">
+                <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/15 border border-white/20 text-white/90 text-xs font-semibold uppercase tracking-wider">
+                  <Plane className="w-3.5 h-3.5" />
+                  Start Your Journey
+                </span>
+              </div>
 
-          {/* Description */}
-          <p className="text-base md:text-lg text-secondary/80 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Let us handle every detail of your travel experience. From visa
-            processing to luxury accommodations, we make your travel dreams come
-            true.
-          </p>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-white leading-tight mb-4">
+                Ready to Plan Your Next Trip?
+              </h2>
+              <p className="text-sm sm:text-base md:text-lg text-white/85 leading-relaxed mb-6 max-w-xl mx-auto lg:mx-0">
+                From Singapore AVA and China visa processing to flights, hotels,
+                and tours — {company.shortName} handles every detail with care.
+              </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
-            {/* Primary CTA */}
-            <Link
-              href="#get-started"
-              className="group relative bg-primary text-white px-8 md:px-12 py-4 md:py-5 rounded-xl font-semibold text-base md:text-lg hover:bg-secondary transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-primary/40 transform hover:scale-105 inline-flex items-center gap-2 min-w-[200px] justify-center"
-            >
-              <span>Get Started</span>
-              <svg
-                className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"
-                />
-              </svg>
-            </Link>
-
-            {/* Secondary CTA */}
-            <Link
-              href="#contact"
-              className="group relative bg-surface border-2 border-primary text-primary px-8 md:px-12 py-4 md:py-5 rounded-xl font-semibold text-base md:text-lg hover:bg-primary/5 transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 inline-flex items-center gap-2 min-w-[200px] justify-center"
-            >
-              <span>Contact Us</span>
-              <svg
-                className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                />
-              </svg>
-            </Link>
-          </div>
-
-          {/* Trust indicators */}
-          <div className="mt-12 flex flex-wrap items-center justify-center gap-6 md:gap-8 text-sm text-secondary/60">
-            <div className="flex items-center gap-2">
-              <svg
-                className="w-5 h-5 text-success"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              <span>100K+ Happy Clients</span>
+              <ul className="flex flex-col sm:flex-row lg:flex-col gap-2 sm:gap-4 lg:gap-2.5 mb-0 lg:mb-6">
+                {trustPoints.map((point) => (
+                  <li
+                    key={point}
+                    className="flex items-center justify-center lg:justify-start gap-2 text-white/90 text-sm"
+                  >
+                    <CheckCircle2 className="w-4 h-4 text-light shrink-0" />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <div className="flex items-center gap-2">
-              <svg
-                className="w-5 h-5 text-success"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              <span>98% Success Rate</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <svg
-                className="w-5 h-5 text-success"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              <span>16+ Years Experience</span>
-            </div>
-          </div>
 
-          {/* Decorative line */}
-          <div className="flex items-center justify-center gap-4 mt-12">
-            <div className="w-12 h-px bg-linear-to-r from-transparent to-primary/30" />
-            <div className="w-2 h-2 bg-primary rounded-full" />
-            <div className="w-12 h-px bg-linear-to-l from-transparent to-primary/30" />
+            <div className="flex flex-col gap-3 sm:gap-4">
+              <div className="rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-4 sm:p-5">
+                <p className="text-white/70 text-xs font-semibold uppercase tracking-wider mb-3">
+                  Quick Visa Links
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <Link
+                    href={routes.singaporeVisa}
+                    className="flex items-center justify-between gap-2 px-4 py-3 rounded-xl bg-white text-primary text-sm font-semibold hover:bg-white/95 transition-colors"
+                  >
+                    <span>Singapore AVA</span>
+                    <ArrowRight className="w-4 h-4 shrink-0" />
+                  </Link>
+                  <Link
+                    href={routes.chinaVisa}
+                    className="flex items-center justify-between gap-2 px-4 py-3 rounded-xl bg-white/15 text-white border border-white/25 text-sm font-semibold hover:bg-white/25 transition-colors"
+                  >
+                    <span>China Visa</span>
+                    <ArrowRight className="w-4 h-4 shrink-0" />
+                  </Link>
+                </div>
+              </div>
+
+              <a
+                href={`tel:${contact.phone.raw}`}
+                className="flex items-center gap-4 px-4 sm:px-5 py-4 rounded-2xl bg-white text-primary hover:bg-white/95 transition-all duration-300 shadow-lg shadow-black/10"
+              >
+                <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                  <Phone className="w-5 h-5 text-primary" />
+                </div>
+                <div className="text-left min-w-0">
+                  <p className="text-xs text-secondary/70 font-medium">
+                    Call us now
+                  </p>
+                  <p className="text-base sm:text-lg font-bold truncate">
+                    {contact.phone.display}
+                  </p>
+                </div>
+                <ArrowRight className="w-5 h-5 ml-auto shrink-0 hidden sm:block" />
+              </a>
+
+              <a
+                href={`mailto:${contact.email.raw}`}
+                className="flex items-center gap-4 px-4 sm:px-5 py-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/15 transition-colors"
+              >
+                <div className="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center shrink-0">
+                  <Mail className="w-5 h-5" />
+                </div>
+                <div className="text-left min-w-0">
+                  <p className="text-xs text-white/60 font-medium">Email us</p>
+                  <p className="text-sm sm:text-base font-semibold truncate">
+                    {contact.email.display}
+                  </p>
+                </div>
+              </a>
+
+              <div className="flex items-start gap-3 px-4 sm:px-5 py-4 rounded-2xl bg-white/5 border border-white/10">
+                <MapPin className="w-5 h-5 text-light shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-xs text-white/60 font-medium mb-1">
+                    Visit our office
+                  </p>
+                  <p className="text-sm text-white/90 leading-relaxed">
+                    {contact.address.full}
+                  </p>
+                </div>
+              </div>
+
+              <Link
+                href={routes.visa}
+                className="inline-flex items-center justify-center gap-2 w-full px-6 py-4 rounded-2xl bg-white text-primary font-bold text-sm sm:text-base hover:bg-light transition-colors shadow-lg shadow-black/10"
+              >
+                <span>Explore All Visa Services</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>

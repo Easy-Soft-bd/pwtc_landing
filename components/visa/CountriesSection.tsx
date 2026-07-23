@@ -4,9 +4,11 @@ import { useState, useMemo } from "react";
 import { Search, X, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { routes } from "@/lib/config";
 
 const countries = [
   { name: "Singapore", region: "asia", flagCode: "sg", verified: true },
+  { name: "China", region: "asia", flagCode: "cn", verified: true },
   { name: "Malaysia", region: "asia", flagCode: "my", verified: true },
   { name: "Thailand", region: "asia", flagCode: "th", verified: false },
   {
@@ -32,7 +34,6 @@ const countries = [
   { name: "New Zealand", region: "oceania", flagCode: "nz", verified: true },
   { name: "Japan", region: "asia", flagCode: "jp", verified: true },
   { name: "South Korea", region: "asia", flagCode: "kr", verified: true },
-  { name: "China", region: "asia", flagCode: "cn", verified: false },
   { name: "Hong Kong", region: "asia", flagCode: "hk", verified: true },
   { name: "Turkey", region: "middle-east", flagCode: "tr", verified: false },
   { name: "Egypt", region: "middle-east", flagCode: "eg", verified: false },
@@ -49,6 +50,15 @@ const countries = [
   { name: "Myanmar", region: "asia", flagCode: "mm", verified: false },
   { name: "Bangladesh", region: "asia", flagCode: "bd", verified: false },
 ];
+
+const countryPageRoutes: Record<string, string> = {
+  Singapore: routes.singaporeVisa,
+  China: routes.chinaVisa,
+};
+
+const getCountryRoute = (countryName: string) =>
+  countryPageRoutes[countryName] ??
+  `/visa/${countryName.toLowerCase().replace(/\s+/g, "-")}-visa-processing`;
 
 const regions = [
   { id: "all", label: "All Countries" },
@@ -151,10 +161,7 @@ const CountriesSection = () => {
         {filteredCountries.length > 0 ? (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
             {filteredCountries.map((country, index) => {
-              // Generate route path from country name
-              const routePath = `/visa/${country.name
-                .toLowerCase()
-                .replace(/\s+/g, "-")}-visa-processing`;
+              const routePath = getCountryRoute(country.name);
 
               return (
                 <Link key={index} href={routePath} className="relative block">

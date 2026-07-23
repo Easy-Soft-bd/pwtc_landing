@@ -3,11 +3,11 @@ import { Metadata } from "next";
 import { company } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: `${company.name} | Singapore Authorized Visa Agent (AVA)`,
+  title: `${company.name} | Singapore AVA & China Visa Authorized Agency`,
   description: company.tagline,
   openGraph: {
     type: "website",
-    title: `${company.name} | Singapore Authorized Visa Agent (AVA)`,
+    title: `${company.name} | Singapore AVA & China Visa Authorized Agency`,
     description: company.tagline,
     images: [
       {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${company.name} | Singapore Authorized Visa Agent (AVA)`,
+    title: `${company.name} | Singapore AVA & China Visa Authorized Agency`,
     description: company.tagline,
     images: ["/web-meta.jpg"],
   },

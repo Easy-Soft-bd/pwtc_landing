@@ -1,6 +1,6 @@
 import Authorizations from "./Authorizations";
 import Hero from "./Hero";
-import Ava from "./Ava";
+import VisaAuthorizations from "./VisaAuthorizations";
 import Statistics from "./Statistics";
 import Services from "./Services";
 import Cta from "./Cta";
@@ -11,7 +11,7 @@ const Home = () => {
     <>
       <Hero />
       <Authorizations />
-      <Ava />
+      <VisaAuthorizations />
       <Statistics />
       <Services />
       <ImgSlider />

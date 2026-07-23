@@ -61,6 +61,7 @@ export const routes = {
   aboutUs: "/about-us",
   singaporeVisa: "/visa/singapore-visa-processing",
   singaporeAva: "/singapore-ava",
+  chinaVisa: "/visa/china-visa-processing",
   services: "#services",
   contact: "#contact",
   teams: "/teams",
@@ -234,7 +235,7 @@ export const whyChooseUs = [
     icon: "Award",
     title: "Authorized & Certified",
     description:
-      "Singapore Authorized Visa Agent (AVA) recognized by the High Commission of Singapore in Dhaka",
+      "Singapore Authorized Visa Agent (AVA) and authorized China visa travel agency in Bangladesh",
   },
   {
     icon: "Shield",
