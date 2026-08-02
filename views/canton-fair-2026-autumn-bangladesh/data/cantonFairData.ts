@@ -392,14 +392,6 @@ export const termsConditions = [
   },
 ] as const;
 
-export const chinaVisaFees = [
-  { type: "Single Entry — 1st Time", fee: "৳9,000" },
-  { type: "Single Entry — 2nd Time", fee: "৳8,500" },
-  { type: "Double Entry", fee: "৳11,000" },
-  { type: "12 Months Multiple Entry", fee: "৳14,000" },
-  { type: "24 Months Multiple Entry", fee: "৳15,000" },
-] as const;
-
 export const partnerContact = {
   name: "Md Masud Parvez",
   wechat: "+8801819061711",

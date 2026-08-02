@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { MessageCircle, Phone, User } from "lucide-react";
 import { partnerContact } from "../data/cantonFairData";
-import { contact } from "@/lib/config";
+import { contact, routes } from "@/lib/config";
 
 const PartnerContact = () => (
   <section className="mb-12 sm:mb-16">
@@ -55,7 +55,7 @@ const PartnerContact = () => (
             {contact.phone.display}
           </a>
           <Link
-            href="/visa/china-visa-processing"
+            href={routes.chinaVisa}
             className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border-2 border-primary text-primary rounded-xl font-bold hover:bg-primary hover:text-white transition-all"
           >
             China Visa Processing

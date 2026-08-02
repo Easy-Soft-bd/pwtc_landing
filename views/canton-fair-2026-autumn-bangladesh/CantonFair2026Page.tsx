@@ -7,7 +7,7 @@ import PackageRatesSection from "./components/PackageRatesSection";
 import PackageIncludesExcludes from "./components/PackageIncludesExcludes";
 import VehicleStandards from "./components/VehicleStandards";
 import TermsConditions from "./components/TermsConditions";
-import ChinaVisaFeesSection from "./components/ChinaVisaFeesSection";
+import ChinaVisaServiceLink from "./components/ChinaVisaServiceLink";
 import PartnerContact from "./components/PartnerContact";
 import {
   basicPackageRates,
@@ -48,7 +48,7 @@ const CantonFair2026Page = () => {
         <PackageIncludesExcludes />
         <VehicleStandards />
         <TermsConditions />
-        <ChinaVisaFeesSection />
+        <ChinaVisaServiceLink />
         <PartnerContact />
       </div>
     </main>
