@@ -13,36 +13,16 @@ import {
   basicPackageRates,
   hostedPackageRates,
 } from "./data/cantonFairData";
+import { cantonFairJsonLd } from "./data/cantonFairSeo";
 
 const CantonFair2026Page = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Event",
-    name: "2026 Autumn Canton Fair",
-    startDate: "2026-10-15",
-    endDate: "2026-11-04",
-    location: {
-      "@type": "Place",
-      name: "China Import and Export Fair Complex, Pazhou, Guangzhou",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Guangzhou",
-        addressCountry: "CN",
-      },
-    },
-    description:
-      "Bangladesh private-group B2B business packages for the 2026 Autumn Canton Fair including hotel, airport transfers, and fair-day vehicle service.",
-    organizer: {
-      "@type": "Organization",
-      name: "Privileged World Travel Club",
-    },
-  };
-
   return (
     <main className="bg-background text-foreground min-h-screen">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(cantonFairJsonLd),
+        }}
       />
 
       <CantonFairHero />
